@@ -1,4 +1,4 @@
-import { Button } from "@nextui-org/react";
+import { Button, Tooltip } from "@nextui-org/react";
 import { Image } from "@nextui-org/react";
 import { type Book } from "@/app/data/books";
 import DeleteIcon from "@/components/icons/DeleteIcon";
@@ -26,16 +26,19 @@ const SelectedBookItem = ({ book }: Book) => {
 						{book.author.name}
 					</p>
 				</div>
-				<Button
-					isIconOnly
-					className='data-[hover]:bg-foreground/10'
-					radius='full'
-					color='danger'
-					variant='light'
-					onPress={() => removeSelectedBook(book.ISBN)}
-				>
-					<DeleteIcon />
-				</Button>
+				<Tooltip content='Eliminar de la Lista'>
+					<Button
+						isIconOnly
+						className='data-[hover]:bg-foreground/10'
+						radius='full'
+						color='danger'
+						variant='light'
+						onPress={() => removeSelectedBook(book.ISBN)}
+						aria-label='Eliminar de la Lista'
+					>
+						<DeleteIcon />
+					</Button>
+				</Tooltip>
 			</div>
 		</li>
 	);
