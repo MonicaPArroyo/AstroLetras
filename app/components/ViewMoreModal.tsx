@@ -36,6 +36,7 @@ const ViewMoreModal = () => {
 	};
 	return (
 		<Modal
+			as='article'
 			size='xl'
 			scrollBehavior='inside'
 			isOpen={isOpen}
@@ -52,7 +53,7 @@ const ViewMoreModal = () => {
 							</div>
 
 							<div className='flex flex-col items-center md:flex-row gap-4 w-full'>
-								<div className='flex flex-col gap-2'>
+								<figure className='flex flex-col gap-2'>
 									<Image
 										as={NextImage}
 										width={150}
@@ -61,10 +62,10 @@ const ViewMoreModal = () => {
 										alt={`Portada del libro ${viewBook?.book.title}`}
 										className='overflow-hidden rounded-md object-cover object-center'
 									/>
-									<p className='text-gray-400 text-center'>
-										Año: {viewBook?.book.year}
-									</p>
-								</div>
+									<figcaption className='text-gray-400 text-center'>
+										Año {viewBook?.book.year}
+									</figcaption>
+								</figure>
 								<div className='flex flex-col flex-1 h-full gap-2'>
 									<h3 className='text-xl font-bold mt-auto'>
 										{viewBook?.book.title}

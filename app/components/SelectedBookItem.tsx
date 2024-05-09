@@ -9,7 +9,7 @@ const SelectedBookItem = ({ book }: Book) => {
 	return (
 		<li className='dark:bg-default-100/50 shadow-lg overflow-hidden  m-2 rounded-3xl'>
 			<div className='flex gap-4 m-4 items-center'>
-				<div className='w-100 h-100'>
+				<figure className='w-100 h-100'>
 					<Image
 						src={book.cover}
 						alt={`Portada del libro ${book.title}`}
@@ -17,7 +17,7 @@ const SelectedBookItem = ({ book }: Book) => {
 						height={72}
 						className='overflow-hidden rounded-sm object-cover object-center'
 					/>
-				</div>
+				</figure>
 				<div className='flex-1'>
 					<h3 className='text-lg leading-6 font-medium text-warning-500'>
 						{book.title}
