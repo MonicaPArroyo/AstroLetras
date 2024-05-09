@@ -13,17 +13,24 @@ const BookCard = ({ book }: Book) => {
 		setViewBook({ book: book });
 	};
 	return (
-		<Card isBlurred className='border-none dark:bg-default-100/50' shadow='sm'>
+		<Card
+			as={"article"}
+			isBlurred
+			className='border-none dark:bg-default-100/50'
+			shadow='sm'
+		>
 			<CardBody>
 				<div className='flex items-center gap-4 h-[240px] w-full'>
-					<Image
-						as={NextImage}
-						width={150}
-						height={208}
-						src={book.cover}
-						alt={`Portada del libro ${book.title}`}
-						className='overflow-hidden rounded-md object-cover object-center'
-					/>
+					<figure>
+						<Image
+							as={NextImage}
+							width={150}
+							height={208}
+							src={book.cover}
+							alt={`Portada del libro ${book.title}`}
+							className='overflow-hidden rounded-md object-cover object-center'
+						/>
+					</figure>
 					<div className='flex flex-col flex-1 h-full relative'>
 						<SaveButton book={{ book: book }} />
 						<div className='flex flex-col gap-2 flex-1 '>

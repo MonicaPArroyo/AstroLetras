@@ -35,6 +35,7 @@ const SelectedBooksModal = () => {
 				</Button>
 			</Badge>
 			<Modal
+				as='section'
 				size='xl'
 				scrollBehavior='inside'
 				isOpen={isOpen}

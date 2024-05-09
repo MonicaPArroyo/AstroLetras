@@ -36,7 +36,7 @@ export default function RootLayout({
 	return (
 		<html lang='en' className='dark'>
 			<body
-				className={`${montserrat.className} bg-gradient-to-br from-secondary-50 from-60%  to-secondary-400 to-100%  p-12 min-h-lvh`}
+				className={`${montserrat.className} bg-gradient-to-br from-secondary-50 from-60%  to-secondary-400 to-100%`}
 			>
 				<Hydration />
 				<Providers>{children}</Providers>
