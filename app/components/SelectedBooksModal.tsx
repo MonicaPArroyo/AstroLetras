@@ -30,11 +30,17 @@ const SelectedBooksModal = () => {
 				size='lg'
 				isInvisible={!selectedBooksCounter}
 			>
-				<Button color='secondary' size='lg' onPress={onOpen}>
+				<Button
+					data-testid='boton-view-books'
+					color='secondary'
+					size='lg'
+					onPress={onOpen}
+				>
 					Lista de Lectura
 				</Button>
 			</Badge>
 			<Modal
+				data-testid='list-books'
 				as='section'
 				size='xl'
 				scrollBehavior='inside'

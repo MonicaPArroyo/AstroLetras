@@ -5,6 +5,11 @@ export type Genre = {
 	value: string;
 };
 
+/**
+ * Obtiene los géneros únicos de una lista de libros.
+ * @param books Lista de libros de la que se extraerán los géneros.
+ * @returns Un array de objetos de tipo `Genre`, que contiene los géneros únicos de la lista de libros.
+ */
 export const getGenres = (books: Book[]) => {
 	const uniqueGenres: { [key: string]: string } = {};
 	const genresArray: Genre[] = [];

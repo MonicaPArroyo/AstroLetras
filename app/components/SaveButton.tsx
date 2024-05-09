@@ -7,6 +7,11 @@ type SaveButtonProps = {
 	book: Book | undefined;
 };
 
+/**
+ * Componente para agregar o eliminar un libro de la lista de lectura.
+ * Este componente proporciona un botón con un icono de guardado que permite al usuario agregar o eliminar un libro de la lista de lectura.
+ * @param book Objeto de tipo `Book` que representa el libro al que se aplicará la acción de guardar o eliminar.
+ */
 const SaveButton = ({ book }: SaveButtonProps) => {
 	const { selectedBooks, removeSelectedBook, addSelectedBook } =
 		useLibraryStore();
@@ -25,6 +30,7 @@ const SaveButton = ({ book }: SaveButtonProps) => {
 	return (
 		<Tooltip content='Agregar A Lista de Lectura'>
 			<Button
+				data-testid={`button-save-book-${book?.book.ISBN}`}
 				isIconOnly
 				className='data-[hover]:bg-foreground/10 right-0 ml-auto'
 				radius='full'
