@@ -3,7 +3,7 @@ const Title = ({
 }: Readonly<{
 	children: React.ReactNode;
 }>) => {
-	return <h3 className='text-3xl font-semibold text-nowrap'>{children}</h3>;
+	return <h2 className='text-3xl font-semibold text-nowrap'>{children}</h2>;
 };
 
 export default Title;

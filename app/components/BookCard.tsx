@@ -27,7 +27,7 @@ const BookCard = ({ book }: Book) => {
 					<div className='flex flex-col flex-1 h-full relative'>
 						<SaveButton book={{ book: book }} />
 						<div className='flex flex-col gap-2 flex-1 '>
-							<h4 className='text-xl font-bold mt-auto'>{book.title}</h4>
+							<h3 className='text-xl font-bold mt-auto'>{book.title}</h3>
 							<p className='text-gray-400 mb-auto'>{book.author?.name}</p>
 						</div>
 						<Button onPress={handleClick}>Ver más</Button>
