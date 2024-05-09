@@ -45,7 +45,23 @@ const ViewMoreModal = () => {
 					<>
 						<ModalHeader>Libro: {viewBook?.book.title}</ModalHeader>
 						<ModalBody>
-							<div className='flex items-center gap-4 w-full'>
+							<div className="flex w-full">
+								<Button
+									isIconOnly
+									className='data-[hover]:bg-foreground/10 right-0 ml-auto'
+									radius='full'
+									color='warning'
+									variant='light'
+									onPress={handlePress}
+								>
+									<SaveIcon
+										className={saved ? "[&>path]:stroke-transparent" : ""}
+										fill={saved ? "currentColor" : "none"}
+									/>
+								</Button>
+							</div>
+
+							<div className='flex flex-col items-center md:flex-row gap-4 w-full'>
 								<div className='flex flex-col gap-2'>
 									<Image
 										as={NextImage}
@@ -59,21 +75,7 @@ const ViewMoreModal = () => {
 										Año: {viewBook?.book.year}
 									</p>
 								</div>
-
-								<div className='flex flex-col flex-1 h-full gap-2 relative'>
-									<Button
-										isIconOnly
-										className='absolute data-[hover]:bg-foreground/10 right-0'
-										radius='full'
-										color='warning'
-										variant='light'
-										onPress={handlePress}
-									>
-										<SaveIcon
-											className={saved ? "[&>path]:stroke-transparent" : ""}
-											fill={saved ? "currentColor" : "none"}
-										/>
-									</Button>
+								<div className='flex flex-col flex-1 h-full gap-2'>
 									<h4 className='text-xl font-bold mt-auto'>
 										{viewBook?.book.title}
 									</h4>

@@ -8,7 +8,7 @@ const SelectedBookItem = ({ book }: Book) => {
 	const { removeSelectedBook } = useLibraryStore();
 	return (
 		<li className='dark:bg-default-100/50 shadow-lg overflow-hidden  m-2 rounded-3xl'>
-			<div className='flex gap-4 m-4 items-center relative'>
+			<div className='flex gap-4 m-4 items-center'>
 				<div className='w-100 h-100'>
 					<Image
 						src={book.cover}
@@ -28,7 +28,7 @@ const SelectedBookItem = ({ book }: Book) => {
 				</div>
 				<Button
 					isIconOnly
-					className='absolute data-[hover]:bg-foreground/10 right-0'
+					className='data-[hover]:bg-foreground/10'
 					radius='full'
 					color='danger'
 					variant='light'
