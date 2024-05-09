@@ -1,6 +1,6 @@
 import { persist } from "zustand/middleware";
 import { create } from "zustand";
-import { type Book } from "@/app/books";
+import { type Book } from "@/app/data/books";
 import { type LibraryState } from "@/store/store.type";
 import { Genre } from "@/utils/getGenres";
 

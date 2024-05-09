@@ -1,4 +1,4 @@
-import { Book } from "@/app/books";
+import { Book } from "@/app/data/books";
 
 export type Genre = {
 	label: string;

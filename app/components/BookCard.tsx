@@ -1,7 +1,7 @@
 import NextImage from "next/image";
 import { Button, Card, CardBody } from "@nextui-org/react";
 import { Image } from "@nextui-org/react";
-import { type Book } from "@/app/books";
+import { type Book } from "@/app/data/books";
 import SaveIcon from "@/components/icons/SaveIcon";
 import { useLibraryStore } from "@/store/store";
 

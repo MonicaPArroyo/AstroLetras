@@ -1,6 +1,6 @@
 import { Button } from "@nextui-org/react";
 import { Image } from "@nextui-org/react";
-import { type Book } from "@/app/books";
+import { type Book } from "@/app/data/books";
 import DeleteIcon from "@/components/icons/DeleteIcon";
 import { useLibraryStore } from "@/store/store";
 

@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect } from "react";
-import { library } from "@/app/books";
+import { library } from "@/app/data/books";
 import Header from "@/components/Header";
 import MainContainer from "@/components/MainContainer";
 import ViewMoreModal from "@/components/ViewMoreModal";
