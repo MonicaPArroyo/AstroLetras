@@ -68,7 +68,7 @@ const SelectedBooksModal = () => {
 								)}
 							</ModalBody>
 							<ModalFooter>
-								<Button color='secondary' variant='flat' onPress={onClose}>
+								<Button variant='bordered' onPress={onClose}>
 									Cerrar
 								</Button>
 							</ModalFooter>

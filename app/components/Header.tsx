@@ -15,9 +15,14 @@ const Header = () => {
 						alt='Logo de la Librería'
 						isBlurred
 					/>
-					<h1 className='text-6xl font-bold bg-gradient-to-r from-secondary-500 to-primary-500 bg-clip-text text-transparent'>
-						AstroLetras
-					</h1>
+					<div className='text-center md:text-left'>
+						<h1 className='text-6xl font-bold bg-gradient-to-r from-secondary-500 to-primary-500 bg-clip-text text-transparent'>
+							AstroLetras
+						</h1>
+						<p className='text-2xl'>
+							Explora el cosmos de la lectura, donde cada libro es una estrella
+						</p>
+					</div>
 				</div>
 				<SelectedBooksModal />
 			</div>

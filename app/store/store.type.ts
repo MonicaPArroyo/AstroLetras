@@ -1,4 +1,4 @@
-import { type Book } from "@/app/books";
+import { type Book } from "@/app/data/books";
 import { type Genre } from "@/utils/getGenres";
 
 export type LibraryState = {
