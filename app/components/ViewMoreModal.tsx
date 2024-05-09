@@ -1,9 +1,17 @@
 import NextImage from "next/image";
-import { Button, Image, Modal, ModalBody, ModalContent, ModalFooter, ModalHeader, Tooltip } from "@nextui-org/react";
+import {
+	Button,
+	Image,
+	Modal,
+	ModalBody,
+	ModalContent,
+	ModalFooter,
+	ModalHeader,
+	Tooltip,
+} from "@nextui-org/react";
 import SaveIcon from "@/components/icons/SaveIcon";
 import { useLibraryStore } from "@/store/store";
 import SaveButton from "./SaveButton";
-
 
 const ViewMoreModal = () => {
 	const {
@@ -40,7 +48,7 @@ const ViewMoreModal = () => {
 						<ModalHeader>Libro: {viewBook?.book.title}</ModalHeader>
 						<ModalBody>
 							<div className='flex w-full'>
-								<SaveButton book={viewBook}/>
+								<SaveButton book={viewBook} />
 							</div>
 
 							<div className='flex flex-col items-center md:flex-row gap-4 w-full'>
@@ -58,9 +66,9 @@ const ViewMoreModal = () => {
 									</p>
 								</div>
 								<div className='flex flex-col flex-1 h-full gap-2'>
-									<h4 className='text-xl font-bold mt-auto'>
+									<h3 className='text-xl font-bold mt-auto'>
 										{viewBook?.book.title}
-									</h4>
+									</h3>
 									<p>
 										Autor:{" "}
 										<span className='text-gray-400'>
