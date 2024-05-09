@@ -13,7 +13,7 @@ const MainContainer = () => {
 		}
 	}, [books, selectedBooks, booksCounter, setBookCounter]);
 	return (
-		<main className='flex flex-col justify-between align-center w-full'>
+		<main className='flex flex-col justify-between align-center w-full flex-1'>
 			<div className='flex flex-col-reverse gap-12 justify-between items-center md:flex-row'>
 				<Title>Libros disponibles: {booksCounter}</Title>
 				<Filter />
