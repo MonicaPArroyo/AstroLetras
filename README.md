@@ -21,13 +21,13 @@ Este es un catálogo diseñado para ayudar a los usuarios a administrar y explor
 1. Clona este repositorio en tu máquina local utilizando Git:
 
 ```bash
-git clone https://github.com/tu-usuario/library-management-system.git
+git clone https://github.com/MonicaPArroyo/AstroLetras.git
 ```
 
 2. Accede al directorio del proyecto:
 
 ```bash
-cd library-management-system
+cd AstroLetras
 ```
 
 3. Instala las dependencias necesarias:
